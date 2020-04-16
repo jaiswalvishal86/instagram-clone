@@ -18,6 +18,7 @@ type Post {
   id: ID! @id
   files: [File!]!
   location: String
+  user: User!
   caption: String!
   likes: [Like!]!
   comments: [Comment!]!
