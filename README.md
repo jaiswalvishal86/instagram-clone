@@ -11,10 +11,11 @@ Instagram Clone App using React + React-Native + Express + Prisma + Apollo + Gra
 - [x] Comment on a photo
 - [x] Search by user
 - [x] Search by location
-- [ ] See user profile
-- [ ] Follow/Unfollow Users
-- [ ] See Full Photo
+- [x] Follow Users
+- [x] Unfollow Users
 - [ ] Edit my profie
-- [ ] Login
+- [ ] See user profile
+- [ ] See Full Photo
+- [ ] Upload a photo
 - [ ] Edit a photo(Delete)
 - [ ] See the feed
