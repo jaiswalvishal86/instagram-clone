@@ -1,56 +1,64 @@
 type User {
-  id: ID!
-  username: String!
-  email: String!
-  firstName: String
-  lastName: String
-  bio: String
-  following: [User!]!
-  followers: [User!]!
-  post: [Post!]!
-  likes: [Like!]!
-  comments: [Comment!]!
-  rooms: [Room!]!
+	id: ID!
+	username: String!
+	email: String!
+	firstName: String
+	lastName: String
+	fullName: String
+	amIFollowing: Boolean!
+	bio: String
+	following: [User!]!
+	followers: [User!]!
+	post: [Post!]!
+	likes: [Like!]!
+	comments: [Comment!]!
+	rooms: [Room!]!
 }
 
 type Post {
-  id: ID!
-  files: [File!]!
-  location: String
-  caption: String!
-  likes: [Like!]!
-  comments: [Comment!]!
+	id: ID!
+	files: [File!]!
+	location: String
+	caption: String!
+	likes: [Like!]!
+	comments: [Comment!]!
+	isLiked: Boolean!
 }
 
 type Like {
-  id: ID!
-  user: User!
-  post: Post!
+	id: ID!
+	user: User!
+	post: Post!
 }
 
 type Comment {
-  id: ID!
-  text: String!
-  user: User!
-  post: Post!
+	id: ID!
+	text: String!
+	user: User!
+	post: Post!
 }
 
 type File {
-  id: ID!
-  url: String!
-  post: Post!
+	id: ID!
+	url: String!
+	post: Post!
 }
 
 type Room {
-  id: ID!
-  participants: [User!]!
-  messages: [Message!]!
+	id: ID!
+	participants: [User!]!
+	messages: [Message!]!
 }
 
 type Message {
-  id: ID!
-  text: String!
-  from: User!
-  to: User!
-  room: Room!
+	id: ID!
+	text: String!
+	from: User!
+	to: User!
+	room: Room!
+}
+
+type UserProfile {
+	user: User!
+	posts: [Post!]!
 }
