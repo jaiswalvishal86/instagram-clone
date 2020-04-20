@@ -17,6 +17,10 @@ Instagram Clone App using React + React-Native + Express + Prisma + Apollo + Gra
 - [x] See user profile
 - [x] See my profile
 - [x] See Full Photo
-- [ ] Upload a photo
-- [ ] Edit a photo(Delete)
+- [x] Upload a photo
+- [x] Edit a photo(Delete)
 - [ ] See the feed
+- [ ] See the Rooms(Chats)
+- [ ] See Room(Chat)
+- [ ] Send private Message
+- [ ] Recieve Message(Realtime)
