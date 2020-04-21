@@ -1,5 +1,6 @@
 type User {
   id: ID! @id
+  avatar: String
   username: String! @unique
   email: String! @unique
   firstName: String @default(value: "")
@@ -22,6 +23,8 @@ type Post {
   caption: String!
   likes: [Like!]! @relation(name: "LikeOfPost", onDelete: CASCADE)
   comments: [Comment!]! @relation(name: "CommentOfPost", onDelete: CASCADE)
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
 }
 
 type Like {
